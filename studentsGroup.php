@@ -65,12 +65,15 @@ include_once "conn2.php";
 							echo '<td><a href="#!" class="left waves-effect waves-blue btn blue">Details</a></td>';
 							echo "</tr>";
 						}
+						$conn = null;
 						?>
 					</tbody>
 				</table>
 			</div>
 			<div class="card-action right">
-				<a href="#!" class="left waves-effect waves-green btn green">Download report<i class="material-icons right">file_copy</i></a>
+				<form method="post" action="Reporte.php">
+					<button class="right btn waves-effect waves-light-blue green" type="submit" name="id" value="<?php echo $idG;?>">Download Report<i class="material-icons right">file_copy</i></button>
+				</form>
 			</div>
 		</div>
 	</div>

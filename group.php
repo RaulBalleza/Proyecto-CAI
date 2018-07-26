@@ -50,6 +50,7 @@ include_once "conn2.php";
 									while ($valores = mysqli_fetch_array($query)) {
 										echo '<option value="'.$valores[idTeacher].'">'.$valores[nombre].'</option>';
 									}
+									$conn = null;
 									?>
 								</select>
 								<label>Select the group teacher</label>

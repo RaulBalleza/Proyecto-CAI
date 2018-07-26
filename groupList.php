@@ -68,12 +68,10 @@ include_once "conn2.php";
 							echo '<td><a href="#!" class="right waves-effect waves-light-red btn red">Delete</a></td>';
 							echo "</tr>";
 						}
+						$conn = null;
 						?>	
 					</tbody>
 				</table>
-			</div>
-			<div class="card-action right">
-				<a href="#!" class="left waves-effect waves-light-green btn green">Download report<i class="material-icons right">file_copy</i></a>
 			</div>
 		</div>
 	</div>

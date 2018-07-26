@@ -4,4 +4,5 @@ $query = "SELECT * FROM teacher WHERE nombre = '$user'";
 $result = $mysqli -> query($query);
 $row = mysqli_fetch_array($result);
 $idT = $row['idTeacher'];
+$conn = null;
 ?>

@@ -96,6 +96,7 @@ include_once "conn2.php";
 					</td>';
 					echo "</tr>";
 				}
+				$conn = null;
 				?>	
 			</tbody>
 		</table>
@@ -104,39 +105,7 @@ include_once "conn2.php";
 		<a href="#!" class="modal-close waves-effect waves-red btn red">Close<i class="material-icons right">cancel</i></a>
 	</div>
 </div>
-<!--div id="modalStudents" class="modal">
-	<div class="modal-content">
-		<h4>Teacher Groups</h4>
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>ID</th>
-					<th>Carreer</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
-				$ID = "idAlumnos";
-				$name = "nombre";
-				$carr = "carrera";
-				$query = $mysqli -> query ("SELECT * FROM alumnos WHERE Grupo_idGrupo = '$idG'");
-				while ($valores = mysqli_fetch_array($query)) {
-					echo "<tr>";
-					echo '<td>'.$valores[$ID].'</td>';
-					echo '<td>'.$valores[$name].'</td>';
-					echo '<td>'.$valores[$carr].'</td>';
-					echo "</tr>";
-				}
-				?>	
-			</tbody>
-		</table>
-	</div>
-	<div class="modal-footer">
-		<a href="#!" class="left waves-effect waves-green btn green">Download report<i class="material-icons right">file_copy</i></a>
-		<a href="#!" class="modal-close waves-effect waves-red btn red">Close<i class="material-icons right">cancel</i></a>
-	</div>
-</div-->
+
 <!--Footer-->
 <footer class="page-footer grey lighten-1" style="position: absolute; right:  0; left: 0; bottom:0; ">
 	<div class="container center black-text">
